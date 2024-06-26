@@ -2,9 +2,9 @@
 CREATE DATABASE health_system;
 
 CREATE TABLE states (
-    id SERIAL PRIMARY KEY,
+    id INT NOT NULL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
-    ibge_code INT NOT NULL
+    abbreviation CHAR(2) NOT NULL
 );
 
 CREATE TABLE medical_agreements (
@@ -25,10 +25,9 @@ CREATE TABLE medical_consultations (
 );
 
 CREATE TABLE cities (
-    id SERIAL PRIMARY KEY,
+    id INT NOT NULL PRIMARY KEY,
     state_id INT NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    ibge_code INT NOT NULL
+    name VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE roles (
