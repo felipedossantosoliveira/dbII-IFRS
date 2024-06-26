@@ -116,7 +116,7 @@ ALTER TABLE plans
 ALTER TABLE patients
     ADD CONSTRAINT patients_medical_agreement_id_foreign FOREIGN KEY (medical_agreement_id) REFERENCES medical_agreements (id);
 
-ALTER TABLE clinics
+ALTER TABLE clinic
     ADD CONSTRAINT clinics_address_id_foreign FOREIGN KEY (address_id) REFERENCES addresses (id);
 
 ALTER TABLE medical_certificates
