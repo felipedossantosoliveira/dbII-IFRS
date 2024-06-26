@@ -53,7 +53,7 @@ CREATE TABLE cids (
     code VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE clinics (
+CREATE TABLE clinic (
     id SERIAL PRIMARY KEY,
     address_id INT NOT NULL,
     name VARCHAR(255) NOT NULL,
