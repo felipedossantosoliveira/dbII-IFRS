@@ -25,7 +25,7 @@ VALUES ('Plano Básico', 1),
 
 INSERT INTO users (role_id, username, password, name, cpf, rg, phone, address_id, sex)
 -- admin (role_id = 1)
-VALUES (1, 'carlos', 'sha256password', 'Carlos Silva', '94804866019', '313879527', '1112345678', 1, 'F'),
+VALUES (1, 'carlos', 'sha256password', 'Carlos Silva', '94804866019', '313879527', '1112345678', 1, 'M'),
 -- doctor (role_id = 2)
        (2, 'joao', 'sha256password', 'João Silva', '76124747006', '164480559', '11987654321', 2, 'M'),
 -- patient (role_id = 3)
