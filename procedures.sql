@@ -87,4 +87,15 @@ CALL register_medical_consultation(
         'Descrição do certificado', -- certificate_description (opcional)
         'Descrição da prescrição' -- prescription_description (opcional)
      );
+-- Uso apenas para inserção da consulta
+CALL register_medical_consultation(
+        1, -- doctor_id
+        1, -- patient_id
+        '2024-07-03 09:00:00', -- initial_date
+        '2024-07-03 10:00:00', -- final_date
+        'Consulta de rotina', -- appointment_description
+        'Observação do paciente', -- observation
+        'Diagnóstico do paciente', -- diagnostic
+        FALSE -- done
+     );
 
